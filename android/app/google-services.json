@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "407541440387",
+    "project_id": "deltalinefm-6d79d",
+    "storage_bucket": "deltalinefm-6d79d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407541440387:android:2237ea1f46f5510c5160b6",
+        "android_client_info": {
+          "package_name": "com.deltaline_solution"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBowgz2964WWx8INNvmwMJ-UHDwvq2Aj4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407541440387:android:b8a43e2b711e39f05160b6",
+        "android_client_info": {
+          "package_name": "com.deltaline_solutions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBowgz2964WWx8INNvmwMJ-UHDwvq2Aj4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407541440387:android:6b88404ed68e9f535160b6",
+        "android_client_info": {
+          "package_name": "com.example.deltaline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBowgz2964WWx8INNvmwMJ-UHDwvq2Aj4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
