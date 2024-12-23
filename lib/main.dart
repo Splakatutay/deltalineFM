@@ -2,49 +2,50 @@ import 'package:deltaline/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:deltaline/services/api_service.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
-final _firebaseMessaging = FirebaseMessaging.instance;
+// final _firebaseMessaging = FirebaseMessaging.instance;
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+//  await Firebase.initializeApp();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  await _firebaseMessaging.requestPermission(
-    alert: true,
-    announcement: false,
-    badge: true,
-    carPlay: false,
-    criticalAlert: false,
-    provisional: false,
-    sound: true,
-  );
-  final fCMToken = await _firebaseMessaging.getToken();
+  // await _firebaseMessaging.requestPermission(
+  //   alert: true,
+  //   announcement: false,
+  //   badge: true,
+  //   carPlay: false,
+  //   criticalAlert: false,
+  //   provisional: false,
+  //   sound: true,
+  // );
+  // final fCMToken = await _firebaseMessaging.getToken();
+  final fCMToken = "testtasd13123";
   await prefs.setString('fcm_token', fCMToken!);
   print(fCMToken);
-  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
-  FirebaseMessaging.instance.getInitialMessage().then((RemoteMessage? message) {
-    if (message != null) {
-      print('yow yow ${message}');
-    }
-  });
+  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+  //
+  // FirebaseMessaging.instance.getInitialMessage().then((RemoteMessage? message) {
+  //   if (message != null) {
+  //     print('yow yow ${message}');
+  //   }
+  // });
 
   // Handle notification taps when the app is in the background or foreground
-  FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-    print('yow yow ${message}');
-  });
+  // FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+  //   print('yow yow ${message}');
+  // });
 
   runApp(const MyApp());
 }
 
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp();
-
-  print('Handling a background message: ${message.messageId}');
-}
+// Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+//   await Firebase.initializeApp();
+//
+//   print('Handling a background message: ${message.messageId}');
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

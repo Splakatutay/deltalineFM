@@ -1,7 +1,6 @@
 import 'package:deltaline/pages/service_request_screen.dart';
 import 'package:deltaline/pages/profile_screen.dart';
 import 'package:deltaline/pages/home_screen.dart';
-import 'package:deltaline/pages/notification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:deltaline/services/api_service.dart';
 
